@@ -3,6 +3,7 @@ require 'pry'
 class PigLatinizer
 
   def piglatinize(user_phrase)
+  
     @new_word = user_phrase.split("")
     vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
     if vowels.include?(@new_word[0])
@@ -14,7 +15,7 @@ class PigLatinizer
   end
 
   def to_pig_latin(sentence)
-    binding.pry 
+
     words_in_sentence = sentence.split(" ")
 
     pig_latinized_words = words_in_sentence.collect do |word|
@@ -67,5 +68,7 @@ class PigLatinizer
       spliced_word << first_letter + "ay"
     end
   end
+  
+  
 
 end
