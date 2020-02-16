@@ -5,10 +5,9 @@ class PigLatinizer
   
   def initialize(word)
     @text = text 
+    binding.pry
   end
   
-  def piglatinize
-    binding.pry 
-  end 
+  
     
 end
