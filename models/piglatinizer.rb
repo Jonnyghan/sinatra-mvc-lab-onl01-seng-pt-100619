@@ -3,6 +3,7 @@ require 'pry'
 class PigLatinizer
 
   def piglatinize(user_phrase)
+    binding.pry 
     @new_word = user_phrase.split("")
     vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
     if vowels.include?(@new_word[0])
