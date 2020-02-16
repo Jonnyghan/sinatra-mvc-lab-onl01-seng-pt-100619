@@ -3,7 +3,7 @@ require 'pry'
 class PigLatinizer
   attr_reader :text
   
-  def initialize(word)
+  def initialize(text)
     @text = text 
     binding.pry
   end
